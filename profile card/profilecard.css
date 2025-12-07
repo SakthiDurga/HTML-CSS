@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.profile-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width:100%;
+    border-color: bisque;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 25px;
+    padding: 16px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    position: absolute;
+    height: 34%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: blue;
+}
+
+.image {
+    position: relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-color: blue;
+    padding:3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white
+}
+
+.profile-card .text-data {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job
+{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttons .button{
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+    border-radius: 24px;
+    padding: 8px 24px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .button:hover{
+    background-color: blueviolet;
+}
+
+.analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid grey;
+}
+.data:last-child{
+    border-right:none ;
+}
+
+.data i{
+    font-size: 18px;
+    margin-top: 6px;
+}
