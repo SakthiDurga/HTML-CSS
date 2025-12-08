@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1300px;
+    background-image: url(https://cdn.wallpapersafari.com/73/80/UNKZmPr.webp);
+    background-position: center;
+    background-size:cover;
+    padding: 10px 10%;
+    position: relative;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 100px;
+    }
+    ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px;
+        a{
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+        }
+    }
+    .l-d{
+        .login{
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+            font-weight: 400;
+        }
+        .download{
+            text-decoration: none;
+            padding: 17px;
+            background-image: linear-gradient(45deg, #df4881,#c430d7);
+            font-size: 14px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            color: #fff;
+            display: inline-block;
+            transition: 0.5s;
+        }
+        .download:hover{
+            border-top-right-radius: 30px;
+        }
+    }
+}
+
+.content{
+    a{
+        text-decoration: none;
+            padding: 17px;
+            background-image: linear-gradient(45deg, #df4881,#c430d7);
+            font-size: 17px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            color: #fff;
+            display: inline-block;
+            padding: 15px 80px;
+            transition: 0.5s;
+            animation-delay:1s ;
+    }
+    margin-top: 10%;
+    max-width: 600px;
+    h1{
+        font-size: 90px;
+        font-weight: 800;
+        color: #222;
+    }
+    p{
+        margin: 10px 0 20px;
+        color:#333;
+        animation-delay:0.5s ;
+    }
+}
+
+.join:hover{
+    border-top-right-radius: 30px;
+}
+.girl-png{
+    width: 800px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.girl-png.anim{
+    animation-delay: 1.5s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
