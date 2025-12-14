@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZone</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/v2/D4E0BAQFkrI9K5ensDA/company-logo_200_200/company-logo_200_200/0/1691468523244/novel_office_india_logo?e=2147483647&v=beta&t=xmyvbfPr_nvN1s5X0XccU_D-HlQTdtmn0QO7lwWF8tc" type="image/x-icon">
+<body>
+    <div class="navbar">
+        <h1>BookZone</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich dad, Poor dad</h2>
+            <h5>Robert Kiyosaki</h5>
+            <p>teaches financial literacy, contrasting his educated but financially struggling "Poor Dad" with his friend's entrepreneurial "Rich Dad," highlighting that the rich make money work for them by acquiring income-generating assets (businesses, real estate, stocks) rather than liabilities (debts, things that cost money like most homes), focusing on financial intelligence to escape the "rat race" of working just for a paycheck</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Book Author" id="book-author">
+            <textarea placeholder="Short Description" id="book-description"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="addbtn" id="add-pop-up-btn">+</button>
+    <script src="book.js"></script>
+</body>
+</html>
