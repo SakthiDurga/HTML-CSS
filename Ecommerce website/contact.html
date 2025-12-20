@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegante Essence</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/c8/91/dc/c891dc1911fa46ff19384b4555f847d6.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar" style="margin-bottom: 20px;">
+        <h1>Elegante Essence</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="ecommerce.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle"  onclick="shownav()">
+            <i class="fa-solid fa-list"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;"  onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+         <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="ecommerce.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+    
+    <!--Contact Box-->
+    <div class="contact-box">
+        <div class="content">
+            <h3>Contact Us</h3>
+            <p>Name:</p>
+            <input type="text" class="name">
+            <p>Email:</p>
+            <input type="text" class="email">
+            <p>Message:</p>
+            <textarea class="message"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h1 class="heading-text">Elegante Essence</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maxime vel quasi rerum voluptatem. Rem et numquam modi ab minus!</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@ 2025 EleganteEssence.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+    <script src="ecommerce.js"></script>
+</body>
+</html>
